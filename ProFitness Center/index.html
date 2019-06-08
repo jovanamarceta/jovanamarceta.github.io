@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="description" content="This is best fitness gym in town!">
+  <meta name="keywords" content="fitness, gym, health, gym">
+  <link rel="stylesheet" href="css/style.css">
+  <!-- add media to src, tablets or less -->
+  <link rel="stylesheet" media="screen and (max-width: 768px)" href="css/mobile.css">
+  <!-- Added Google font Arimo -->
+  <link href="https://fonts.googleapis.com/css?family=Arimo:700" rel="stylesheet">
+  <!-- Added Font awesome iconds -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+    integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+  <title>FitnessPro Gym | Welcome</title>
+</head>
+
+<body>
+  <!-- Navigation and Showcase inside <header> tag -->
+  <header>
+    <nav id="navbar">
+      <!-- add container class within nav to center things -->
+      <div class="container">
+        <!-- Navigation menu and logo inside <nav> tag -->
+        <ul>
+          <!-- we add a special class to the link  -->
+          <li><a class="current" href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <h1 class="logo"><a href="index.html">Fitness<span class="text_different">Pro</span></a></h1>
+      </div>
+    </nav>
+    <!-- Showcase -->
+    <div id="showcase">
+      <!-- we need another container because if we don't put, our content will spread all across -->
+      <div class="container">
+        <!-- put heading, paragraph and button inside content -->
+        <div class="showcase-content">
+          <h1>Fitness<span class="text_different">Pro</span></h1>
+          <h2>Find Your <span class="text_different">Perfect</span> Shape</h2>
+          <p class="lead">Now is time to become best version of yourself !</p>
+          <a class="btn" href="about.html">About Us</a>
+        </div>
+      </div>
+    </div>
+
+    <div id="subsribe">
+      <div class="container">
+        <h2>Subsribe to Newsletter and <span class="text-primary-dark">Write to us</span></h2>
+        <form>
+          <input type="email" placeholder="Enter Your Email here...">
+          <button type="submit">Subsribe</button>
+        </form>
+      </div>
+    </div>
+  </header>
+
+  <!-- HOME-INFO SECTION -->
+  <section id="home-info" class="bg-dark">
+    <div class="info-content">
+      <h2>Why Fitness<span class="text_different">Pro</span> Gym?</h2>
+      <p>FitnessPro offers the ultimate resources to help you achieve your fitness goals. In addition to a full array of
+        cardio and strength training equipment, gym offers a variety of group fitness classes taught by most elite
+        instructors. Members focus on achieving long- term results through challenging and
+        constantly varied workouts.</p>
+      <a href="about.html" class="btn btn-light">Read More</a>
+    </div>
+    <div class="info-img"></div>
+  </section>
+
+
+  <!-- FEATURES SECTION -->
+  <section id="features">
+    <!-- There are 3 boxes -->
+    <div class="box bg-light">
+      <!-- Added font awesome classes for icons -->
+      <!-- added fa-3x class to make it bigger -->
+      <i class="fas fa-map-marker-alt fa-3x"></i>
+      <h3>Great Location</h3>
+      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsum, nesciunt!</p>
+    </div>
+    <div class="box bg-primary">
+      <i class="fas fa-dumbbell fa-3x"></i>
+      <h3>Free First Training</h3>
+      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsum, nesciunt!</p>
+    </div>
+    <!-- we added our global classes for background -->
+    <div class="box bg-light">
+      <i class="fas fa-dollar-sign fa-3x"></i>
+      <h3>Best Prices</h3>
+      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsum, nesciunt!</p>
+    </div>
+  </section>
+
+  <!-- after using float, we add clas for clearing -->
+  <div class="clr"></div>
+
+  <!-- FOOTER -->
+  <footer id="main-footer">
+    <p>Fitness<span class="text_different">Pro</span> Gym &copy; 2019, All Rights Reserved</p>
+  </footer>
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,384 @@
+/* GLOBAL */
+
+/* we grab everything with * */
+* {
+  /* clear default margin and padding that browser put on elements */
+  margin: 0;
+  padding: 0;
+  /* when we have boxes we don't want padding or margin bo be added on actual width of the box */
+  box-sizing: border-box; 
+}
+
+html,body {
+  font-family: 'Arimo', sans-serif;
+  /* spasing between lines */
+  line-height: 1.7em;
+}
+
+.container {
+  /* push it to the middle */
+  margin:auto;
+  /* max for responsivness */
+  max-width: 1100px;
+  /* it always show background */
+  overflow: auto;
+  padding: 0 20px;
+}
+
+a {
+  color: gray;
+  /* remove underlines */
+  text-decoration: none;
+}
+
+h1,h2,h3 {
+  /* spacing under headings because we remove default margin and padding */
+  padding-bottom: 20px;
+}
+
+p {
+  /* 10px on top and bottom, 0 on right and left */
+  margin: 10px 0;
+}
+
+.text_different {
+  color:#e5ba39;
+}
+
+.text-primary-dark {
+  color: #32384B;
+}
+
+.lead {
+  font-size: 21px;
+}
+
+/* for all buttons */
+.btn {
+  /* we dont want to go all awayt accros and also not inline */
+  display:inline-block;
+  font-size:17px;
+  color:#e5ba39;
+  background: #333;
+  padding: 13px 20px;
+  /* none border in any browser because buttons have border by default */
+  border: none;
+  cursor: pointer;
+}
+
+.btn-light {
+  /* same as btn but different color and background */
+  color:#383f54;
+  background: #fcf7f7; 
+}
+
+.btn:hover {
+  background: #e5ba39;
+  color: #383f54;
+}
+
+/* background color */
+.bg-dark {
+  background: #32384B;
+  color: #fbfde8;
+}
+
+.bg-light {
+  background:#fbfde8;
+  color: #32384B;
+}
+
+.bg-primary {
+  background:#E5BA39;
+  color: #32384B;
+}
+
+/* after using float, we must clear class */
+.clr {
+  clear: both;
+}
+
+.l-heading {
+  font-size: 40px;
+  line-height: 1.2;
+}
+
+/* Padding for about page*/
+.py-1 { padding: 10px 0;}
+.py-2 { padding: 20px 0;}
+.py-3 { padding: 30px 0;}
+
+
+/* NAVBAR */
+
+#navbar {
+  background: #383f54;
+  color: #fff;
+  /* background shows no matter what */
+  overflow: auto;
+}
+
+/* all links in navbar */
+#navbar a {
+  color: #fff;
+}
+
+#navbar ul {
+  /* remove bullets */
+  list-style: none;
+  float: left;
+}
+
+#navbar ul li {
+  float: left;
+}
+
+#navbar ul li a {
+  /* display as block so we can add padding */
+  display: block;
+  padding: 20px; 
+  text-align: center;
+}
+
+/* add pseudo selector :hover */
+#navbar ul li a:hover,
+#navbar ul li a.current {
+  background: #4b5265;
+  color: #e5ba39;
+}
+
+#navbar .logo {
+  float: right;
+  padding-top: 20px;
+}
+
+
+/* SHOWCASE */
+
+#showcase {
+  /* because we are inside css folder, we use .. to outisde css folder and than img folder  */
+  background: url('../img/strongg.jpg') no-repeat center center/cover;
+  /* set height of background */
+  height: 600px;
+}
+
+#showcase .showcase-content {
+  color: #fbfde8;
+  text-align: center;
+  /* push all down */
+  padding-top: 170px;
+}
+
+#showcase .showcase-content h1 {
+  font-size: 110px;
+  line-height: 0.8em;
+  color: 	#fbfde8;
+}
+
+#showcase .showcase-content h2 {
+  font-size: 45px;
+  line-height: 1.2em;
+  color: 	#fbfde8;
+}
+
+#showcase .showcase-content p {
+  /* to put link bellow */
+  padding-bottom: 20px;
+  line-height: 1.4em;
+}
+
+
+/* Subsribe */
+
+#subsribe {
+  min-height: 70px;
+  background: #e5ba39;
+}
+
+#subsribe h2 {
+  float: left;
+  text-transform: capitalize;
+  color:	#fbfde8;
+  padding-top:20px;
+}
+
+#subsribe form {
+  float: right;
+  padding-top:12px;
+}
+ 
+#subsribe form button {
+  display:inline-block;
+  font-size:16px;
+  color:#fff;
+  background: #333;
+  padding: 13px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+#subsribe form button:hover{
+  background: #e5ba39;
+  color: #383f54;
+}
+
+
+#subsribe input {
+  padding: 13px 20px;
+  width:250px;
+  border-radius: 4px;
+}
+
+
+/* HOME-INFO */
+
+#home-info {
+  height: 400px;
+}
+
+#home-info .info-img {
+  float: right;
+  width: 50%;
+  background: url('../img/gym.jpeg') no-repeat center center/cover;
+  /* image take whole space */
+  min-height: 100%;
+}
+
+#home-info .info-content {
+  float: left;
+  width:50%;
+  height: 100%;
+  text-align: center;
+  padding: 50px 30px;
+  /* if anything go outside, there is no scrollbars */
+  overflow: hidden;
+}
+
+#home-info .info-content p {
+  padding-bottom: 30px;
+}
+
+
+/* FEATURES SECTION */
+
+.box {
+  /* make them horizontal */
+  float: left;
+  width: 33.3%;
+  padding: 50px;
+  text-align: center;
+}
+
+.box i {
+  margin-bottom: 10px;
+}
+
+
+/* ABOUT-INFO  */
+
+#about-info .info-right{
+  float: right;
+  width: 50%;
+  min-height: 100%;
+}
+
+#about-info .info-left {
+  float: left;
+  width: 50%;
+  min-height: 100%;
+}
+#about-info .info-left img {
+  /* we want image 100% of container */
+  /* if we want to add margin auto on image, we must display block, because image is inline by default */
+  display: block;
+  margin: auto;
+  width: 70%;
+}
+
+
+/* TESTIMIONIALS */
+
+/*section testimonials */
+#testimonials {
+  /* set height to 100% for responsive design */
+  height: 100%;
+  background: url('../img/extreme.jpeg') no-repeat center center/cover;
+  padding-top: 100px;
+}
+
+#testimonials h2 {
+  color: #fff;
+  text-align: center;
+  padding-bottom: 40px;
+  
+}
+
+#testimonials .testimonial {
+  padding: 20px;
+  margin-bottom: 40px;
+  border-radius: 10px;
+  opacity: 0.9;
+}
+
+#testimonials .testimonial img {
+  width: 100px;
+  float: right;
+  margin-left: 20px;
+  border-radius: 50%;
+}
+
+
+/* CONTACT-FORM */
+
+#cover-image { 
+  background: url('../img/sunrise.jpeg') no-repeat center center/cover;
+  height: 250px;
+}
+
+#bottom-image {
+  background: url('../img/teg.jpeg') no-repeat center center/cover;
+  height: 400px;
+}
+
+
+
+#contact-form .form-group {
+  margin-bottom: 20px;
+
+}
+
+#contact-form label {
+  /* block, so that can push to the next line */
+  display: block;
+  margin-bottom: 5px;
+}
+
+#contact-form input, 
+#contact-form textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px #ddd solid;
+}
+
+/* we add pseudo selector focus to change color wan click input and textarea */
+#contact-form input:focus, 
+#contact-form textarea:focus {
+  outline: none;
+  border-color: #e5ba39;
+}
+
+#contact-form textarea {
+  height: 200px;
+}
+
+#contact-info .box p{
+  color: #e5ba39
+}
+
+/* FOOTER */
+#main-footer {
+  text-align:center;
+  background: #4b5265;
+  color: #fcf7f7;
+  padding: 20px;
+}
