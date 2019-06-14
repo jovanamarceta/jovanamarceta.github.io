@@ -1,0 +1,20 @@
+/* Align icons to left
+ */
+
+ #classes .items .item {
+   display: flex;
+   text-align: left;
+ }
+
+ /* Posiciton of icon */
+ #classes .items .item i {
+   margin-right: 1.3rem;
+   /* put icon in center */
+   align-self: center;
+   margin-bottom: 0;
+ }
+
+ #contact .map {
+   /* map is wider than contat, and when come below 1100 come equal */
+   flex: 2;
+ }

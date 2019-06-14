@@ -1,0 +1,253 @@
+/* GLOBAL */
+
+/* importing google font */
+@import url('https://fonts.googleapis.com/css?family=Poppins&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  line-height: 1.4;
+}
+
+.container {
+  max-width: 1100px;
+  margin: auto;
+  padding: 0 2rem;
+  overflow: hidden;
+}
+
+.text-center {
+  text-align: center;
+}
+
+a {
+  text-decoration: none;
+}
+
+p {
+  margin: 0.75rem 0;
+}
+
+.different_text {
+  color: #FFA05C;
+}
+
+.bg_primary {
+  background: #FFA05C;
+  color: #fff;
+}
+
+.bg_light {
+  background: #f4f4f4;
+  color: #333;
+}
+
+.bg_dark {
+  background: #333;
+  color: #f4f4f4;
+}
+
+
+.large_h {
+  font-size: 6rem;
+  margin-bottom: 0.95rem;
+  line-height: 1.3;
+}
+
+.medium_h {
+  font-size: 2rem;
+  margin-bottom: 0.95rem;
+}
+
+.large_p {
+  font-size: 1.3rem;
+  margin-bottom: 2rem;
+}
+
+
+.py_1 { padding: 1.5rem 0;}
+.py_2 { padding: 2rem 0;}
+.py_3 { padding: 3rem 0;}
+
+.p_1 { padding: 1.5rem;}
+.p_2 { padding: 2rem}
+.p_3 { padding: 3rem;}
+
+.btn {
+  display: inline-block;
+  color: #fff;
+  background: #FFA05C;
+  padding: 0.7rem 3rem;
+  border: none;
+  border-radius: 6px;
+}
+
+.btn:hover {
+  background: #cc8049;
+}
+
+.btn_dark {
+  background: #333;
+  color: #fff;
+}
+
+.list {
+  margin: 0.5rem, 0;
+  list-style: none;
+  display: block;
+
+}
+
+.list li {
+  padding: 0.5rem 0;
+  border-bottom: #444 dotted 1px;
+}
+
+
+/* NAVBAR */
+
+#navbar {
+  /* make navbar flex */
+  display: flex;
+  /* when we scrool, it stick to top  */
+  position: sticky;
+  /* where we stick */
+  top:0;
+  background: #333;
+  color: #fff;
+  overflow: auto;
+  /* align item horizontaly, with space */
+  justify-content: space-between;
+  /* position,higher number closer to the screen, always on top */
+  z-index: 1;
+  padding: 1rem;
+}
+
+ul {
+  display: flex;
+  align-items: center;
+  list-style: none;
+
+}
+
+#navbar ul li a {
+  color: #fff;
+  /* space between links */
+  padding: 0.75rem;
+  margin: 0 0.25rem;
+}
+
+#navbar ul li a:hover {
+  background: #FFA05C;
+  border-radius: 6px;
+}
+
+
+/* SHOWCASE */
+
+#showcase {
+  background: #333 url('../img/cover3.jpg') no-repeat center center/cover;
+  height: 100vh;
+  color: #fff;
+}
+
+#showcase .cover {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  /* 100% of showcase */
+  height: 100%;
+  padding: 0 2rem;
+  /* Overlay, position absolute so we can overlay */
+  /* position: absolute;
+  top: 65px;
+  left:0;
+  right: 0;
+  bottom: 0;
+  /* rgba, alpha for transparency image */
+  background-color: rgba(0,0,0,0.4);
+} 
+
+
+/* SECTION:CLASSES */
+
+#classes .items {
+  display: flex;
+  padding: 1rem;
+}
+
+#classes .items .item {
+  flex: 1;
+  text-align: center;
+  padding: 1rem;
+}
+
+#classes .items .item i {
+  background: #FFA05C;
+  padding: 1rem;
+  border-radius: 50%;
+  margin-bottom: 1rem;
+}
+
+
+/* SECTION: PROFESSORS */
+
+#professors {
+  display: flex;
+}
+
+#professors div {
+  /* make items all equal */
+  flex: 1;
+}
+
+#professors .professors_img {
+  background: url('../img/professors.jpg') no-repeat center center/cover;
+}
+
+
+/* SECTION: SPONSORS */
+
+#sponsors .items {
+  display: flex;
+
+}
+
+#sponsors .items img {
+  display: block;
+  margin: auto;
+  width: 60%;
+}
+
+
+/* SECTION: CONTACT */
+#contact {
+  display: flex;
+
+}
+
+#contact .map, #contact .contact_form {
+  flex: 1;
+} 
+
+#contact .contact_form .form-group {
+  margin: 0.75rem;
+}
+
+/* label display as block */
+#contact .contact_form label {
+  display: block;
+}
+
+#contact .contact_form input,
+#contact .contact_form textarea {
+  width: 100%;
+  padding: 0.5rem;
+}
