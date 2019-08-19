@@ -1,0 +1,48 @@
+body {
+  background: #FF6666;
+  color: #fff;
+}
+
+.navbar {
+  opacity: 0.8;
+}
+
+#register-section {
+  background: url('../img/couplee.jpg') no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  min-height: 740px;
+}
+
+#register-section .dark-overlay {
+  /* cover whole section, parent dive so must say abosolute */
+  position: absolute;
+  top:0;
+  left:0;
+  /* all across */
+  width: 100%;
+  /* same ase parent */
+  min-height: 740px;
+  /* rgba for alpha value */
+  background: rgba(76,30,30,0.6);
+}
+
+#register-section .register-inner {
+  padding-top: 140px;
+}
+
+#register-section .card-form {
+  opacity: 0.9;
+}
+
+#profile-section .fas, #chat-section .fas, #match-section .fas {
+  background: #FF6666;
+  color: #fff;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+#match-section .fas{
+  background: #28A745;
+}
+

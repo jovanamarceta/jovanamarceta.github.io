@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <!-- Import Font Awesome -->
+  <script src="https://kit.fontawesome.com/24d6fec78d.js"></script>
+  <!-- Import Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Perfect Match | Online Dating</title>
+</head>
+
+<!-- for scroller -->
+
+<body data-spy="scroll" data-target="#main-nav" id="register">
+
+  <!-- NAVBAR -->
+  <!-- navbar-expand-sm:for small screens and responsivness, bg-dark:background danger, navbar-dark for text to match background color -->
+  <nav class="navbar navbar-expand-sm navbar-dark bg-danger fixed-top" id="main-nav">
+    <!-- move all content to middle -->
+    <div class="container">
+      <a class="navbar-brand" href="index.html">Perfect Match</a>
+      <!-- hamburger meny for small screens -->
+      <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+        <!-- ml-auto: margin on left side -->
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item"><a class="nav-link" href="#register-section">Register</a></li>
+          <li class="nav-item"><a class="nav-link" href="#profile-head-section">Profile</a></li>
+          <li class="nav-item"><a class="nav-link" href="#match-head-section">Match</a></li>
+          <li class="nav-item"><a class="nav-link" href="#chat-head-section">Chat</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+
+  <!-- REGISTER SHOWCASE SECTION -->
+  <header id="register-section">
+    <div class="dark-overlay">
+      <!-- content -->
+      <div class="container register-inner">
+        <!-- grid, 8 and 4 column -->
+        <div class="row">
+          <!-- show on large screen, but on less than large screen don't show. None by default -->
+          <div class="col-lg-8 d-none d-lg-block">
+            <h1 class="display-4">Create a <span class="font-weight-bold">Free profile </span> and find Your <span
+                class="font-weight-bold"> New Love</span> </h1>
+            <!-- Add flex -->
+            <!-- align horizontally -->
+            <div class="d-flex">
+              <!-- padding 4, align on beginning -->
+              <div class="p-4 align-self-start">
+                <i class="fas fa-search fa-2x"></i>
+              </div>
+              <div class="p-4 align-self-end">
+                Discover up to 1000 matches with our intelligent two-way matching feature
+              </div>
+            </div>
+
+            <div class="d-flex">
+              <div class="p-4 align-self-start">
+                <i class="fas fa-comment fa-2x"></i>
+              </div>
+              <div class="p-4 align-self-end">
+                When you're ready, contact members using an easy and private messaging interface.
+              </div>
+            </div>
+
+            <div class="d-flex">
+              <div class="p-4 align-self-start">
+                <i class="fas fa-heart fa-2x"></i>
+              </div>
+              <div class="p-4 align-self-end">
+                Find someone special with one of our many search options and add those you like to your Favourites.
+              </div>
+            </div>
+
+          </div>
+
+          <!-- show on every screen -->
+          <div class="col-lg-4">
+            <div class="card bg-danger text-center card-form">
+              <div class="card-body">
+                <h3>Register Today</h3>
+                <p>Please fill out this form</p>
+                <form>
+                  <div class="form-group">
+                    <input type="text" class="form-control" placeholder="First Name">
+                  </div>
+                  <div class="form-group">
+                    <input type="text" class="form-control" placeholder="Last Name">
+                  </div>
+                  <div class="form-group">
+                    <select class="form-control" id="gender">
+                      <option>Male</option>
+                      <option>Female</option>
+                      <option>Other</option>
+                    </select>
+                  </div>
+                  <div class="form-group">
+                    <input type="text" class="form-control" placeholder="Username">
+                  </div>
+                  <div class="form-group">
+                    <input type="email" class="form-control" placeholder="Email">
+                  </div>
+                  <div class="form-group">
+                    <input type="password" class="form-control" placeholder="Password">
+                  </div>
+                  <div class="form-group">
+                    <input type="password" class="form-control" placeholder="Confirm Password">
+                  </div>
+                  <input type="submit" value="Sing Up" class="btn btn-outline-light btn-block">
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+
+  <!-- PROFILE HEAD -->
+  <section id="profile-head-section">
+    <div class="container">
+      <div class="row">
+        <div class="col text-center py-5">
+          <i class="fas fa-search fa-3x"></i>
+          <h1 class="display-4">In-Depth Profiles</h1>
+          <p class="lead">Share the true you and get to know your matches with profiles that dig. Lorem ipsum dolor sit
+            amet consectetur adipisicing elit. Fugit quam debitis dolor, esse distinctio obcaecati.</p>
+          <a href="#" class="btn btn-outline-light">Find out more</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROFILE SECTION -->
+  <section id="profile-section" class="bg-light text-muted py-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <!-- img-fluid to be fix with container -->
+          <img src="img/meaningful222.png" alt="In depth profile" class="img-fluid mb-3">
+        </div>
+        <div class="col-md-6">
+          <h3>Build Profile that suits to you</h3>
+          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste, ducimus vitae. Eius repellat in aperiam
+            tempore necessitatibus numquam doloribus, debitis, iusto sequi molestias dolorem inventore</p>
+          <div class="d-flex font-italic">
+            <div class="p-4 align-self-start">
+              <i class="fas fa-check fa-2x"></i>
+            </div>
+            <div class="p-4 align-self-start">
+              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nobis sequi magni, enim est incidunt quia?
+              </p>
+            </div>
+          </div>
+
+          <div class="d-flex font-italic">
+            <div class="p-4 align-self-start">
+              <i class="fas fa-check fa-2x"></i>
+            </div>
+            <div class="p-4 align-self-start">
+              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nobis sequi magni, enim est incidunt quia?
+              </p>
+            </div>
+          </div>
+
+          <div class="d-flex font-italic">
+            <div class="p-4 align-self-start">
+              <i class="fas fa-check fa-2x"></i>
+            </div>
+            <div class="p-4 align-self-start">
+              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nobis sequi magni, enim est incidunt quia?
+              </p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- MATCH HEAD SECTION  -->
+  <section id="match-head-section" class="bg-success">
+    <div class="container">
+      <div class="row">
+        <div class="col text-center py-5">
+          <i class="fas fa-users fa-3x"></i>
+          <h1 class="display-4">Smart Algorithm</h1>
+          <p class="lead">Every day at noon, receive quality matches curated just for you by our ever-evolving
+            algorithm. Lorem ipsum dolor sit
+            amet consectetur adipisicing elit. Fugit quam debitis dolor, esse distinctio obcaecati.</p>
+          <a href="#" class="btn btn-outline-light">Find out more</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- MATCH SECTION -->
+  <section id="match-section" class="bg-light text-muted py-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 text-dark">
+          <h3>Find Your Perfect Match Based on Your Interest</h3>
+          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste, ducimus vitae. Eius repellat in aperiam
+            tempore necessitatibus numquam doloribus, debitis, iusto sequi molestias dolorem inventore</p>
+          <div class="d-flex">
+            <div class="p-4 align-self-start">
+              <i class="fas fa-check fa-2x"></i>
+            </div>
+            <div class="p-4 align-self-start font-italic">
+              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nobis sequi magni, enim est incidunt quia?
+              </p>
+            </div>
+          </div>
+
+          <div class="d-flex">
+            <div class="p-4 align-self-start">
+              <i class="fas fa-check fa-2x"></i>
+            </div>
+            <div class="p-4 align-self-start font-italic">
+              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nobis sequi magni, enim est incidunt quia?
+              </p>
+            </div>
+          </div>
+
+          <div class="d-flex">
+            <div class="p-4 align-self-start">
+              <i class="fas fa-check fa-2x"></i>
+            </div>
+            <div class="p-4 align-self-start font-italic">
+              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nobis sequi magni, enim est incidunt quia?
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <img src="img/algoritm2.png" alt="Pefcet match" class="img-fluid mb-3">
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- CHAT HEAD SECTION  -->
+  <section id="chat-head-section">
+    <div class="container">
+      <div class="row">
+        <div class="col text-center py-5">
+          <i class="fas fa-comment-dots fa-3x"></i>
+          <h1 class="display-4">Real Conversations</h1>
+          <p class="lead">Skip the small talk and spark meaningful conversation with personalized Icebreakers. Lorem,
+            ipsum dolor sit amet consectetur adipisicing elit. Optio provident ipsam, quae officia obcaecati at.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- PROFILE SECTION -->
+  <section id="profile-section" class="bg-light text-muted py-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <!-- img-fluid to be fix with container -->
+          <img src="img/chat2.png" alt="chat" class="img-fluid mb-3">
+        </div>
+        <div class="col-md-6">
+          <h3>Chat about interesting and deep topics</h3>
+          <p class="pt-4">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste, ducimus vitae.
+            Eius
+            repellat
+            in aperiam
+            tempore necessitatibus numquam doloribus, debitis, iusto sequi molestias dolorem inventore
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas autem necessitatibus minima, numquam
+            aliquid quisquam neque iure reiciendis eligendi. Nesciunt, amet magni molestias in fugiat iusto suscipit
+            libero debitis quo animi illum explicabo repellat velit cupiditate accusamus iste. Mollitia eaque architecto
+            ipsa esse eius debitis rerum, unde temporibus quo eos ratione, nesciunt non amet, tenetur tempora qui omnis
+            sapiente magni expedita error voluptate aperiam at ex. Culpa autem excepturi doloremque illum possimus ullam
+          </p>
+
+
+          <div class="d-flex">
+            <div class="p-4 align-self-start">
+              <i class="fas fa-check fa-2x"></i>
+            </div>
+            <div class="p-4 align-self-start font-italic">
+              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nobis sequi magni, enim est incidunt quia?
+              </p>
+            </div>
+          </div>
+
+          <div class="d-flex">
+            <div class="p-4 align-self-start">
+              <i class="fas fa-check fa-2x"></i>
+            </div>
+            <div class="p-4 align-self-start font-italic">
+              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nobis sequi magni, enim est incidunt quia?
+              </p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- FOOTER -->
+  <footer id="main-footer">
+    <div class="container">
+      <div class="row">
+        <div class="col text-center py-4">
+          <h3>Perfect Match</h3>
+          <p>Dating Website, Find your Love</p>
+          <p>Copyright &copy; <span id="year"></span></p>
+          <button class="btn btn-outline-light" data-toggle="modal" data-target="#contactModal">Contact Us & Send
+            Message</button>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- CONTACT MODAL -->
+  <div class="modal fade text-dark" id="contactModal">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Contact Us</h5>
+          <button class="close" data-dismiss="modal">
+            <span>&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="form-group">
+              <label for="name">Name:</label>
+              <input type="text" class="form-control">
+            </div>
+            <div class="form-group">
+              <label for="email">Email:</label>
+              <input type="email" class="form-control">
+            </div>
+            <div class="form-group">
+              <label for="name">Message:</label>
+              <textarea class="form-control"></textarea>
+            </div>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button class="btn btn-primary btn-block">Send</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+  <!-- Jqury minified version -->
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+  <!-- Import Bootstrap JS-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+
+  <script>
+    // Get the current year for copyright (put #year where you want)
+    $('#year').text(new Date().getFullYear());
+
+    //Initialize Scrollspy
+    $('body').scrollspy({ target: '#main-nav' });
+
+    // Smooth Scrolling
+    $("#main-nav a").on('click', function (event) {
+      if (this.hash !== "") {
+        event.preventDefault();
+
+        const hash = this.hash;
+
+        $('html, body').animate({
+          scrollTop: $(hash).offset().top
+        }, 800, function () {
+
+          window.location.hash = hash;
+        });
+      }
+    });
+
+  </script>
+</body>
+
+</html>
