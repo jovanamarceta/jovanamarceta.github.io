@@ -1,0 +1,84 @@
+/* Put logo to the center */
+#navbar {
+  padding-bottom: 1rem;
+}
+
+#navbar .logo {
+  float: none;
+  text-align: center;
+}
+
+/* Remove floats from li and ul */
+#navbar ul, #navbar ul li {
+  float: none;
+}
+
+/* Smaller padding */
+#navbar ul li a {
+  padding: 3px;
+  border-bottom: #5f6576 dotted 1px;
+}
+
+/* Header responsive */
+#cover .cover_content h1 {
+  font-size: 18vw;
+}
+
+#cover .cover_content h2 {
+  font-size: 9vw;
+}
+
+/* Don't display subsribe on small devices */
+#subsribe {
+  display: none;
+}
+
+/* Home_info */
+#home_info {
+  height: 570px;
+}
+
+/* remove image */
+#home_info .info-img {
+  display: none;
+}
+
+/* get rid of float */
+#home_info .info-text {
+  float: none;
+  width: 100%;
+}
+
+/* Boxes */
+.box {
+  float: none;
+  width: 100%;
+}
+
+
+/* About_info */
+
+#about_info .about-img,
+#about_info .about-text {
+   float: none;
+   width: 100%;
+}
+
+.l-heading {
+  text-align: center;
+  padding-top: 1rem;
+}
+
+/* Contact cover image */
+#contact_cover {
+  display: none;
+}
+
+#contact_info .box {
+  border-bottom: #fbfde8 dotted 1px;
+}
+
+
+#contact_form {
+  text-align: center;
+}

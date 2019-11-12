@@ -1,0 +1,340 @@
+/* CSS Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Global */
+html, body {
+  font-family: 'Arimo', sans-serif;
+  line-height: 1.7em;
+  
+}
+
+a {
+  color: #333;
+  text-decoration: none;
+}
+
+h1, h2, h3 {
+  /* Add spacing under */
+  padding-bottom: 20px;
+}
+
+p {
+  margin: 10px 0;
+}
+
+.container {
+  margin: auto;
+  max-width: 1100px;
+  overflow: auto;
+  padding: 0 20px;
+}
+
+.text-primary {
+  color: #e5ba39;
+}
+
+.lead {
+  font-size: 18px;
+}
+
+.btn {
+  display: inline-block;
+  font-size: 18px;
+  color: #e5ba39;
+  background: #383F54;
+  padding: 13px 20px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.btn:hover {
+  background: #e5ba39;
+  color: #383F54;
+}
+
+.btn-light {
+  background: #fbfde8;
+  color: #383F54;
+}
+
+.bg-dark {
+  background: #32384B;
+  color: #fbfde8;
+}
+
+.bg-light {
+  background: #FBFDE8;
+  color: #32384B;
+}
+
+.bg-primary {
+  background: #e5ba39;
+  color: #32384B;
+}
+
+.clr {
+  clear: both;
+}
+
+.py-1 {padding: 10px 0; }  /* py - padding on top and bottom */
+.py-2 {padding: 20px 0;}
+.py-3 {padding: 30px 0;}
+
+.l-heading {
+  font-size: 40px;
+  line-height: 1.2;
+}
+
+.sm-heading {
+  font-size: 25px;
+}
+
+
+
+/* Navigation */
+#navbar {
+  background: #383F54;
+  color: #fbfde8;
+  /* background shows */
+  overflow: auto;
+}
+
+#navbar a {
+  color: #fbfde8;
+}
+
+#navbar .logo {
+  float: right;
+  padding-top: 20px;
+}
+
+#navbar ul {
+  list-style: none;
+  float: left;
+}
+
+#navbar ul li {
+  float: left;
+}
+
+#navbar ul li a {
+  display: block;
+  padding: 20px;
+  text-align: center;
+}
+
+#navbar ul li a:hover,
+#navbar ul li a.current {
+  background: #4b5265;
+  color: #e5ba39;
+}
+
+/* Cover */
+#cover {
+  background: url('../img/cover.jpg') no-repeat center center/cover;
+  height: 600px;
+}
+
+#cover .cover_content {
+  color: #fbfde8;
+  text-align: center;
+  padding-top: 90px;
+}
+
+#cover .cover_content h1 {
+  font-size: 110px;
+  line-height: 1.2em;
+}
+
+#cover .cover_content h2 {
+  font-size: 45px;
+  line-height: 1.2em;
+  color:#fbfde8;
+}
+
+#cover .cover_content p {
+  padding-bottom: 20px;
+  line-height: 1.5em;
+}
+
+/* Subsribe */
+
+
+#subsribe {
+  min-height: 70px;
+  background: #e5ba39;
+}
+
+#subsribe h2 {
+  float: left;
+  text-transform: capitalize;
+  color:	#fbfde8;
+  padding-top:20px;
+}
+
+#subsribe form {
+  float: right;
+  padding-top:12px;
+}
+
+ 
+
+#subsribe form .sub-btn:hover{
+  background: #fff;
+  color:#4b5265;
+}
+
+
+#subsribe input {
+  padding: 13px 20px;
+  width:250px;
+  border-radius: 4px;
+}
+
+/* Home_info */
+#home_info {
+  height: 500px;
+}
+
+#home_info .info-img {
+  float: right;
+  width: 50%;
+  background: url('../img/home_info.jpeg') no-repeat;
+  /* image take whole spase */
+  min-height: 100%;
+}
+
+#home_info .info-text {
+  float: left;
+  width: 50%;
+  height: 100%;
+  text-align: center;
+  padding: 50px 30px;
+  overflow: hidden;
+}
+
+#home_info .info-text p {
+  padding-bottom: 50px;
+}
+
+/* Features */
+.box {
+  /* make boxes horizontal */
+  float: left;
+  width: 33.3%;
+  padding: 50px;
+  text-align: center;
+}
+
+.box i {
+  margin-bottom: 10px;
+}
+
+/* Footer */
+#footer {
+  text-align: center;
+  background: #4B5265;
+  color: #fbfde8;
+  padding: 20px;
+}
+
+
+/* About_info */
+
+#about_info {
+  padding-top: 40px
+}
+
+#about_info .about-img img {
+  width: 90%;
+  /* display as block to can add margin */
+  display: block;
+  margin: auto;
+  border-top-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+}
+
+#about_info .about-img {
+  float: left;
+  width: 50%;
+  min-height: 100%;
+
+}
+
+#about_info .about-text {
+  float: right;
+  width: 50%;
+  min-height: 100%;
+}
+
+/* Coaches */
+#coaches {
+  height: 100%;
+  background: url('../img/about-cover.jpeg') no-repeat center center/cover;
+  padding-top: 50px;
+}
+
+#coaches  h2 {
+  color: #fbfde8;
+  text-align:center;
+  padding-bottom: 40px;
+}
+
+#coaches .coach {
+  padding: 20px;
+  margin-bottom: 40px;
+  border-top-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+  opacity: 0.9;
+}
+
+#coaches .coach img {
+  width: 100px;
+  float: right;
+  margin-right: 20px;
+  border-radius: 50%;
+}
+
+/* Contact cover image */
+#contact_cover {
+  background: url('../img/theme.jpeg') no-repeat center center/cover;
+  height: 250px;
+}
+
+/* Contact_form */
+#contact_form .form-group {
+  margin-bottom: 20px;
+}
+
+#contact_form label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+#contact_form input,
+#contact_form textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px #ddd solid;
+}
+
+#contact_form textarea {
+  height: 200px;
+}
+
+#contact_form input:focus,
+#contact_form textarea:focus {
+  outline: none;
+  border-color: #e5ba39;
+}
+
+/* Contact bottom */
+#contact_bottom {
+  background: url('../img/teg.jpeg') no-repeat center center/cover;
+  height: 400px;
+}
