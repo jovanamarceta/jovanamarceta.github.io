@@ -1,0 +1,88 @@
+#navbar {
+    padding: 0.1rem;
+}
+
+#navbar .logo {
+    padding-top: 1rem;
+}
+
+#navbar ul li a {
+    padding: 0.1rem;
+    margin: 0 0.3rem;
+}
+
+.l-heading {
+    font-size: 22vw;
+}
+
+#classes .items {
+    display: block;
+    padding: 1rem;
+}
+/* Align incos left */
+#classes .items .item {
+    display: flex;
+    text-align: left;
+
+}
+
+#classes .items .item i {
+    margin-right: 1.3rem;
+    align-self: center;
+    margin-bottom: 0;
+}
+
+
+
+
+
+/* SMARTPHONES */
+@media (max-width: 500px) {
+    #navbar {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #navbar .logo {
+        margin-bottom:0.5rem;
+        text-align: center;
+    }
+    
+    #navbar ul {
+        padding: 0.5rem;
+    }
+
+    #professors {
+        display: block;
+    }
+
+    #professors .professors-img {
+        display: none;
+    }
+
+    #sponsors .items img {
+        width: 80%;
+    }
+
+    #sponsors .items div:last-child {
+        display: none;
+    }
+
+    #form {
+        flex-direction: column;
+    }
+
+    #form .map {
+        display: none;
+    }
+}
+
+@media (max-height: 568px) {
+    .l-heading {
+        font-size: 3rem;
+    }
+
+    .lead {
+        font-size: 1rem;
+    }
+}
